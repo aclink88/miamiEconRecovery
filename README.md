@@ -1,4 +1,4 @@
-# Miami's Post-Pandemic Economy Recovery
+# Miami's Post-Pandemic Economic Recovery
 
 Alex Link
 
