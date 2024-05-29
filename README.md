@@ -98,6 +98,7 @@ Center. The survey was distributed to 100,000 small businesses with the
 following findings reported:
 
 <img src="./images/image1.png" align="right" width="300px"/>
+<p>
 a)  29% of businesses benefit from an online platform. Around 53% of
     businesses leased facilities to run their businesses, with 33%
     owning them. Renting/leasing facilities is a cost to the business
@@ -139,7 +140,7 @@ c)  With supply chains being halted, there was a lack of access to
     Unfortunately, about 40 percent of respondents reported closing
     their business as a result of COVID-19. Loss of revenue was a
     contributing factor as well (MCC, 2020)".
-    <br clear="right"/>
+    <br clear="right"/></p>
     
 <p align="center">
    <img src="./images/image2.png" style="display: block; margin: 0 auto;"/>
