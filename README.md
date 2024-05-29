@@ -623,7 +623,7 @@ bachelor's degree.
 As seen in our literature review, forecasting business growth is no easy
 task. Even with access to tens of thousands of more data points via
 Yelp's open source database, the Harvard Business Study was only able to
-achieve a 26.4 percent $*R*^2$ on its testing sample. Using a fractional
+achieve a 26.4 percent $R^2$ on its testing sample. Using a fractional
 amount of data from only the American Community Survey (539 observations
 total), our model was able to achieve comparable results to that of the
 Harvard Business Study, as it attained a *R*^2^ of 25.85 percent. As can
