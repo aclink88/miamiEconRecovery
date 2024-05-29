@@ -460,9 +460,7 @@ grow over time. These underlying growth trends are highly correlated,
 leading to autocorrelation within the model, resulting in a high *R*^2^
 without any truly significant economic meaning.
 
-![](./images/image7.png)
-![](./images/image8.png)
-![](./images/image9.png)
+<img src="./images/image7.png" width="333" height="auto"> <img src="./images/image8.png" width="333" height="auto"> <img src="./images/image9.png" width="333" height="auto">
 
 Looking at the above graphs made it evident to us that spurious
 regression would be an issue for us if we attempted to model the raw
