@@ -97,7 +97,7 @@ Florida Chamber Foundation and the University of West Florida Haas
 Center. The survey was distributed to 100,000 small businesses with the
 following findings reported:
 
-<img src="./images/image1.png" align="right" width="200px"/>
+<img src="./images/image1.png" align="right" width="300px"/>
 a)  29% of businesses benefit from an online platform. Around 53% of
     businesses leased facilities to run their businesses, with 33%
     owning them. Renting/leasing facilities is a cost to the business
@@ -117,7 +117,6 @@ b)  Since the outbreak of the pandemic, various events and activities
     Rental & Leasing, and Accommodation & Food Services. The
     transportation industry suffered significantly even after businesses
     opened up due to travel restrictions.
-    <br clear="right"/>
 
 c)  With supply chains being halted, there was a lack of access to
     supplies and thus businesses were forced to change their business
@@ -138,6 +137,7 @@ c)  With supply chains being halted, there was a lack of access to
     Unfortunately, about 40 percent of respondents reported closing
     their business as a result of COVID-19. Loss of revenue was a
     contributing factor as well (MCC, 2020)".
+    <br clear="right"/>
     
 <p align="center">
    <img src="./images/image2.png" style="display: block; margin: 0 auto;"/>
