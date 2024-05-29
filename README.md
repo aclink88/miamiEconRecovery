@@ -99,7 +99,7 @@ following findings reported:
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
     <p style="margin: 0; flex: 1;">a) 29% of businesses benefit from an online platform. Around 53% of businesses leased facilities to run their businesses, with 33% owning them. Renting/leasing facilities is a cost to the business especially when no revenue is earned, or businesses are shut. Being able to run a business through an online channel or platform appeared to be beneficial as it enabled businesses to continue running their businesses and earn revenue.</p>
-    <img src="./images/image1.png" style="max-width: 50px; margin-left: 20px;">
+    <img src="./images/image1.png" style="max-width: 5px; margin-left: 20px;">
 </div>
 
 <div style="margin-bottom: 20px;">
