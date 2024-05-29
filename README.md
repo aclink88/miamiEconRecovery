@@ -106,6 +106,7 @@ a)  29% of businesses benefit from an online platform. Around 53% of
     appeared to be beneficial as it enabled businesses to continue
     running their businesses and earn revenue.<br>
 
+
 b)  Since the outbreak of the pandemic, various events and activities
     were restricted across the State. Majority of the businesses that
     were forced to close during the crisis with those that relied on in
@@ -117,6 +118,7 @@ b)  Since the outbreak of the pandemic, various events and activities
     Rental & Leasing, and Accommodation & Food Services. The
     transportation industry suffered significantly even after businesses
     opened up due to travel restrictions.<br>
+
 
 c)  With supply chains being halted, there was a lack of access to
     supplies and thus businesses were forced to change their business
