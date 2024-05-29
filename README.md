@@ -466,7 +466,7 @@ leading to autocorrelation within the model, resulting in a high $R^2$
 without any truly significant economic meaning.
 
 <p align="center">
-<img src="./images/image7.png" width="333" height="auto"> <img src="./images/image8.png" width="333" height="auto"> <img src="./images/image9.png" width="333" height="auto">
+<img src="./images/image7.png" align="left" width="333" height="auto"> <img src="./images/image8.png" align="center" width="333" height="auto"> <img src="./images/image9.png" align="right" width="333" height="auto">
 </p>
 
 Looking at the above graphs made it evident to us that spurious
