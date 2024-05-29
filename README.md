@@ -453,11 +453,11 @@ specifically known as econometrics, we came across a paper by C.W.J.
 Granger and P. Newbold on the subject of *spurious regression*, a
 frequent phenomenon seen when attempting to model economic data.
 Essentially, what this paper describes is the fact that when modeling
-many economic relationships, the resulting *R*^2^ will be high not due
+many economic relationships, the resulting $R^2$ will be high not due
 to any true relationship between the variables, but simply due to the
 fact that the dependent variable and independent variables continuously
 grow over time. These underlying growth trends are highly correlated,
-leading to autocorrelation within the model, resulting in a high *R*^2^
+leading to autocorrelation within the model, resulting in a high $R^2$
 without any truly significant economic meaning.
 
 <img src="./images/image7.png" width="333" height="auto"> <img src="./images/image8.png" width="333" height="auto"> <img src="./images/image9.png" width="333" height="auto">
@@ -476,7 +476,7 @@ the model as a whole was statistically significant (as indicated by each
 model's F-statistic). Those models that were determined to be
 statistically significant were then compared to see which held the most
 explanatory power, as represented by their coefficient of determination
-(*R*^2^). Our best model, subject to the aforementioned criteria, had
+($R^2$). Our best model, subject to the aforementioned criteria, had
 the following structure:
 
 ```math
@@ -626,7 +626,7 @@ Yelp's open source database, the Harvard Business Study was only able to
 achieve a 26.4 percent $R^2$ on its testing sample. Using a fractional
 amount of data from only the American Community Survey (539 observations
 total), our model was able to achieve comparable results to that of the
-Harvard Business Study, as it attained a *R*^2^ of 25.85 percent. As can
+Harvard Business Study, as it attained a $R^2$ of 25.85 percent. As can
 be seen in the above table, assuming a zip code in Miami-Dade County
 were to experience zero growth in number of business establishments,
 labor force and portion of the workforce not employed in the
