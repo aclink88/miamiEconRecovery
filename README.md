@@ -617,6 +617,7 @@ bachelor's degree.
 <p align="center">
    <img src="./images/image15.png" style="display: block; margin: 0 auto;"/>
 </p>
+
   ----------------------------------- -----------------------------------
 
 As seen in our literature review, forecasting business growth is no easy
