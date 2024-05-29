@@ -614,24 +614,9 @@ bachelor's degree.
 #### <ins>Business Growth Rate Model Findings:</ins>
 
   ----------------------------------- -----------------------------------
-  **Model Results**                   
-
-  *R*^2^                              25.85%
-
-  **Parameter**                       **Estimate**
-
-  Intercept                           0.0258
-
-  Establishment Growth Rate (1 Year   -0.2215
-  Lag)                                
-
-  Labor Force Growth Rate (1 Year     0.1281
-  Lag)                                
-
-  Portion of Workforce not Employed   0.2093
-  in Information, Finance or          
-  Professional Business Services      
-  Industries Growth Rate (1 Year Lag) 
+<p align="center">
+   <img src="./images/image15.png" style="display: block; margin: 0 auto;"/>
+</p>
   ----------------------------------- -----------------------------------
 
 As seen in our literature review, forecasting business growth is no easy
