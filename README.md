@@ -24,7 +24,7 @@ in certain subdivisions increases the median income more than it does in
 other subdivisions (Rural versus Urban Areas). Our business growth model
 (PanelOLS regression) was able to explain over a quarter of the variance
 in predicting business growth that the predictor variables explain
-collectively, by attaining a R^2^ of 25.85%. An ARIMA model was
+collectively, by attaining a $R^2$ of 25.85%. An ARIMA model was
 implemented to forecast the total Nonfarm employment for 3 months. With
 an RMSE of 0.0016168 on the validation set, results from our Dirichlet
 model were applied to the total Nonfarm forecast to predict the
@@ -767,8 +767,8 @@ shows that increasing the educational attainment of residents,
 represented as the percentage with a bachelor's degree or higher, would
 also lead to an increase in median income across all subdivisions. Our
 business growth rate model which was built using the PanelOLS regression
-obtained a R^2^ of 25.85%, approximately on par with the baseline model
-from the Harvard Business Study which attained a R^2^ of 26.4%. The
+obtained a $R^2$ of 25.85%, approximately on par with the baseline model
+from the Harvard Business Study which attained a $R^2$ of 26.4%. The
 results of our Dirichelet regression model obtained a RMSE of
 approximately 0.0016168 indicating our predicted employment numbers did
 a fairly decent job in approximating the actual monthly employment
