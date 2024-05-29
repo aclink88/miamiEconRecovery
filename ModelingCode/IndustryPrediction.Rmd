@@ -1,0 +1,272 @@
+---
+title: "Industry Predictions"
+output:
+  html_document:
+    toc: false
+    toc_depth: 6
+    toc_float: true
+    toc_collapsed: true
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, include=FALSE, results='hide'}
+## install.packages('DirichletReg')
+## install.packages('RCurl')
+## install.packages("devtools") 
+## devtools::install_github("dracodoc/rCartoAPI")
+## install.packages("RJSONIO") 
+## devtools::install_github("Vizzuality/cartodb-r", subdir = 'CartoDB')
+## install.packages("fable")
+## install.packages("feasts")
+## install.packages("urca")
+## install.packages("plyr")
+## install.packages("gridExtra")
+## install.packages("kableExtra")
+library(feasts)
+library(fable)
+library(urca)
+library(tsibble)
+library(lubridate)
+library(plyr)
+library(dplyr)
+library(gridExtra)
+library(grid)
+library(knitr)
+library(kableExtra)
+library(DirichletReg)
+library(RCurl)
+library(RJSONIO)
+library(CartoDB)
+library(Metrics)
+# setup_key(env_path = "~/.Renviron")
+# library(rCartoAPI)
+```
+```{r, include=FALSE, results='hide'}
+creds <- read.csv(file = 'credentials.csv', header=FALSE)
+cartodb_account_name = creds[1,]
+api_key = creds[2,]
+cartodb(cartodb_account_name, api.key=api_key)
+```
+
+```{r, include=FALSE, results='hide'}
+employ <- cartodb.collection("emp")
+employ <- subset(employ, select=-c(cartodb_id, the_geom))
+## Comes through as list of lists, so convert to DF
+employ <- as.data.frame(lapply(employ,unlist))
+## Convert date column to appropriate type
+employ$date <- as.Date(employ$date)-1
+employ$date <- employ$date %m+% months(1)
+```
+
+```{r, include=FALSE, results='hide'}
+df <- subset(employ, select=-c(employment,fed_govt,state_govt,local_govt,tot_private,
+                              private_serv_prov,goods_prod,tot_farm))
+## Transform all industries to percent of tot_non_farm for dirichlet regression
+df[-(1:2)] <- df[-(1:2)]/df[,2]
+## rowSums(df[-(1:2)]) ## <- Verifies all percents sum to 1
+```
+
+```{r, include=FALSE, results='hide'}
+## Create lags of industry variables
+df_lag <- data.frame(df[-(1:2)])
+df_lag <- df_lag %>% mutate_all(lag)
+cols <- colnames(df_lag)
+df_lag <- df_lag %>% rename_with(.fn=~paste0(., "_lag"), .cols=cols)
+df_lag2 <- data.frame(df_lag)
+df_lag2 <- df_lag2 %>% mutate_all(lag)
+cols2 <- colnames(df_lag2)
+df_lag2 <- df_lag2 %>% rename_with(.fn=~paste0(., "2"), .cols=cols2)
+df <- cbind(df, df_lag, df_lag2)
+```
+
+
+```{r, include=FALSE, results='hide'}
+## Get rid of rows with N/A
+## number of lags
+l = 1
+df2 <- df[(l+1):nrow(df),]
+## training includes all but prior 12 months
+t = 12
+trainy <- df2[1:(nrow(df2)-t),]
+testy <- df2[-(1:(nrow(df2)-t)),]
+## Prepare Y's
+df2$Y <- DR_data (df2[,3:(ncol(df2)-ncol(df_lag)-ncol(df_lag2))])
+trainy$Y <- DR_data (trainy[,3:(ncol(trainy)-ncol(df_lag)-ncol(df_lag2))])
+testy$Y <- DR_data (testy[,3:(ncol(testy)-ncol(df_lag)-ncol(df_lag2))])
+```
+
+```{r}
+## Define predictors and formula
+preds <- cols2
+preds2 <- colnames(df_lag2)
+totpreds <- append(preds, preds2)
+form <- as.formula(paste("Y ~ ", paste(preds, collapse="+")))
+form
+```
+
+
+
+```{r, include=FALSE, results='hide'}
+# Train the model. Modify the predictors as such.
+controls=list(iterlim=100000,tol1=1e-10,tol2=1e-20)
+res1 <- DirichReg(Y ~ tot_govt_lag + mine_log_construct_lag + manufact_lag + ed_health_serv_lag + leis_hospitality_lag + finance_lag + pro_biz_serv_lag + trade_trans_util_lag + info_lag, data=trainy, 
+                  control=controls,
+                  verbosity=0)  
+summary(res1)
+```
+```{r}
+## Predictions
+predicted_train <- predict(res1)
+# resid(res1) # Residuals
+# Predict On Test Data or Forecast
+predicted_test <- predict(res1, testy) # Model 1
+colnames(predicted_test) <- cols
+test <- data.matrix(testy[,3:12])
+paste0("Root Mean Square Error = ",rmse(test,predicted_test))
+```
+
+```{r}
+### Forecast next 3 months
+### First total number of jobs using ARIMA
+jobs <- employ[,c(1,3)]
+tjobs <- jobs %>% as_tsibble(index=date)
+tjobs <- tjobs %>% mutate(date=tsibble::yearmonth(date)) %>% 
+  as_tsibble(index=date) %>% dplyr::select(date,tot_non_farm)
+## jobs %>% autoplot(tot_non_farm)
+fit <- tjobs %>% model(
+  ## arima = ARIMA(tot_non_farm)
+  ## To match seasonality of UofChicago (seasonal fit approximates better)
+  arima = ARIMA(formula = tot_non_farm ~ 1 + pdq(1, 2, 4) + PDQ(0, 0, 0, 12))
+)
+pjobs <- fit %>% forecast(h=3)
+pjobs <- pjobs %>% mutate(date=lubridate::as_date(date)-1) %>% 
+  as_tsibble(index=date) %>% dplyr::select(date,.mean)
+pjobs <- as.data.frame(pjobs)
+colnames(pjobs)<-c("date","tot_non_farm")
+pjobs$date <- pjobs$date %m+% months(1)
+jobs <- rbind(jobs,pjobs)
+
+### Industry Percentages
+ender <- data.frame(df2)
+for (i in 1:3){
+  nxtmth <- tail(ender, 1)[(3:12)]
+  cols <- colnames(nxtmth)
+  nxtmth <- nxtmth %>% rename_with(.fn=~paste0(., "_lag"), .cols=cols)
+  nxtpred <- predict(res1, nxtmth)
+  colnames(nxtpred) <- cols
+  nxt <- cbind(nxtpred, nxtmth)
+  ender <- rbind.fill(ender,nxt)
+}
+ender <- tail(ender, 3)
+preders <- cbind(pjobs,ender[-(1:2)])
+full <- rbind.fill(df2, preders)
+full <- full[(1:12)]
+full$date <- floor_date(full$date %m+% months(1), 'month') %m-% days(1)
+## Convert back to job numbers (in thousands)
+full[-(1:2)] <- full[-(1:2)]*full[,2]
+full <- full %>% mutate_if(is.numeric, round, digits=1)
+
+outty <- tail(full,3)
+rownames(outty) <- NULL
+outty %>% 
+  kbl(caption="<center><strong>Predictions</strong></center>",
+      escape=FALSE,format="html") %>% 
+  kable_material_dark(c("striped"),position="left") %>% 
+  column_spec(1:10,border_left=T,border_right=T)
+```
+
+
+```{r, include=FALSE, results='hide'}
+## Adding pred to column names to know they're predicted
+ptrain <- cbind(trainy[,c("date","tot_non_farm")], pred=predicted_train)
+ptest <- cbind(testy[,c("date","tot_non_farm")], pred=predicted_test)
+pnew <- preders[(1:12)]
+cols <- colnames(pnew[-(1:2)])
+pnew <- pnew %>% rename_with(.fn=~paste0("pred.",.), .cols=cols)
+preddy <- rbind(ptrain, ptest, pnew)
+preddy$date <- floor_date(preddy$date %m+% months(1), 'month') %m-% days(1)
+## Convert back to job numbers (in thousands)
+preddy[-(1:2)] <- preddy[-(1:2)]*preddy[,2]
+preddy <- preddy %>% mutate_if(is.numeric, round, digits=1)
+rownames(preddy) <- NULL
+```
+
+```{r}
+## Plotting
+fuller <- merge(full, preddy, by=1:2)
+fuller <- fuller[-(2)]
+library(ggplot2)
+library(reshape2)
+
+df <- melt(fuller,id.vars='date',variable.name='Industry')
+
+ggplot(df, aes(date, value)) +
+  geom_line(aes(colour=Industry)) + 
+  xlab("Date") + ylab("Jobs (in thousands)") +
+  theme(legend.key.size = unit(0.3, 'cm'),
+        legend.key.height = unit(0.4, 'cm'),
+        legend.key.width = unit(0.2, 'cm'),
+        legend.title = element_text(size=9),
+        legend.text = element_text(size=7))
+```
+
+```{r fig.height=12, fig.width=8}
+## install.packages("patchwork")
+library(patchwork)
+
+df2 <- melt(fuller,id.vars='date',variable.name='Key')
+
+indies <- colnames(fuller)[(2:11)]
+propind <- list("Total Government Jobs","Mining, Logging & Construction",
+                "Manufacturing","Education & Health Services",
+                "Leisure & Hospitality","Finance",
+            "Professional Business Services", "Trade, Transportation & Utilities",
+            "Information Industry", "Other Industries")
+
+p <- list()
+for (x in 1:10){
+  temp <- df2[grep(indies[x], df2$Key), ]
+  p[[x]] <- ggplot(temp, aes(date, value)) +
+  geom_line(aes(colour=Key)) + 
+  ggtitle(propind[x]) + xlab("Date") + ylab("Jobs (in thousands)") +
+  scale_color_manual(labels=c("Actual", "Predicted"),values=c("#00BFC4","#F8766D")) +
+  theme(plot.title = element_text(size=15), legend.key.size=unit(1,'cm'),
+        legend.key.height = unit(1, 'cm'),
+        legend.key.width = unit(1, 'cm'),
+        legend.title = element_text(size=14),
+        legend.text = element_text(size=13))
+}
+wrap_plots(p,nrow=5)+plot_layout(guides="collect")&theme(legend.position='bottom')
+```
+
+```{r}
+## If want a big plot of each individual industry
+df2 <- melt(fuller,id.vars='date',variable.name='Key')
+
+indies <- colnames(fuller)[(2:11)]
+propind <- list("Total Government Jobs","Mining, Logging & Construction",
+                "Manufacturing","Education & Health Services",
+                "Leisure & Hospitality","Finance",
+            "Professional Business Services", "Trade, Transportation & Utilities",
+            "Information Industry", "Other Industries")
+
+for (x in 1:10){
+  temp <- df2[grep(indies[x], df2$Key), ]
+  print(ggplot(temp, aes(date, value)) +
+  geom_line(aes(colour=Key)) + 
+  ggtitle(propind[x]) + xlab("Date") + ylab("Jobs (in thousands)") +
+  scale_color_manual(labels=c("Actual", "Predicted"),values=c("#00BFC4","#F8766D")) +
+  theme(plot.title = element_text(size=12), legend.key.size=unit(0.3,'cm'),
+        legend.key.height = unit(0.4, 'cm'),
+        legend.key.width = unit(0.2, 'cm'),
+        legend.title = element_text(size=9),
+        legend.text = element_text(size=7)))
+}
+```
+
+
+
+
+
+
