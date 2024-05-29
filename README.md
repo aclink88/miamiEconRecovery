@@ -1,7 +1,3 @@
----
-useMath: true
----
-
 # Miami's Post-Pandemic Economic Recovery
 
 Alex Link
