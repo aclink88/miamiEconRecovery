@@ -488,7 +488,7 @@ the following structure:
 {estab}_{it} = \beta_{0} + \beta_{1}{estab}_{i,\ t - 1} + \beta_{2}{labforce}_{i,\ t - 1} + \beta_{3}{portion₋not₋infofinprof}_{i,\ t - 1} + \gamma U_{i} + \delta F_{t} + e_{it}
 ```
 
-$$ {estab}_{it} = \beta_{0} + \beta_{1}{estab}_{i,\ t - 1} + \beta_{2}{labforce}_{i,\ t - 1} + \beta_{3}{portion₋not₋infofinprof}_{i,\ t - 1} + \gamma U_{i} + \delta F_{t} + e_{it} $$
+$${estab}\_{it} = \beta_{0} + \beta_{1}{estab}\_{i,\ t - 1} + \beta_{2}{labforce}\_{i,\ t - 1} + \beta_{3}{portion₋not₋infofinprof}\_{i,\ t - 1} + \gamma U_{i} + \delta F_{t} + e_{it}$$
 
 Where the above is representative of:
 
