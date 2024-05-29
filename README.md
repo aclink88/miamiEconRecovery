@@ -722,35 +722,178 @@ predicted monthly total nonfarm estimates to get individual industry job
 estimates for the next three months, which can be seen in the table
 below[^1].
 
-  ------------------------ --------------- --------------- ---------------
-  **Industry**             **Nov-2021**    **Dec-2021**    **Jan-2022**
-
-  **Total Nonfarm**        **1,181.6**     **1,177.2**     **1,177.1**
-
-  Total Government Jobs    136.7           133.6           131.4
-
-  Mining, Logging &        53.9            54.8            56.1
-  Construction                                             
-
-  Manufacturing            41.7            41.4            41.2
-
-  Education & Health       186.8           184.7           183.3
-  Services                                                 
-
-  Leisure & Hospitality    119.1           117.9           117.2
-
-  Finance                  85.1            84.5            84.3
-
-  Professional Business    199.7           202.2           205.7
-  Services                                                 
-
-  Trade, Transportation &  292.4           292.2           292.2
-  Utilities                                                
-
-  Information              18.7            18.7            18.6
-
-  Other                    47.8            47.2            46.9
-  ------------------------ --------------- --------------- ---------------
+<table style="width: 4.7e+2pt;border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width: 165.75pt;border: 1pt solid black;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'><strong><span style="color:white;">Industry</span></strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong><span style="color:white;">Nov-2021</span></strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong><span style="color:white;">Dec-2021</span></strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong><span style="color:white;">Jan-2022</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(217, 217, 217);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'><strong>Total Nonfarm</strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;background: rgb(217, 217, 217);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong>1,181.6</strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;background: rgb(217, 217, 217);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong>1,177.2</strong></p>
+            </td>
+            <td style="width: 102.2pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;background: rgb(217, 217, 217);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'><strong>1,177.1</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Total Government Jobs</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>136.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>133.6</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>131.4</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Mining, Logging &amp; Construction</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>53.9</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>54.8</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>56.1</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Manufacturing</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>41.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>41.4</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>41.2</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Education &amp; Health Services</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>186.8</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>184.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>183.3</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Leisure &amp; Hospitality</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>119.1</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>117.9</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>117.2</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Finance</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>85.1</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>84.5</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>84.3</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Professional Business Services</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>199.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>202.2</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>205.7</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Trade, Transportation &amp; Utilities</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>292.4</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>292.2</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>292.2</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Information</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>18.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>18.7</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>18.6</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 165.75pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;background: rgb(243, 243, 243);padding: 5pt;vertical-align: top;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'>Other</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>47.8</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>47.2</p>
+            </td>
+            <td style="width:102.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt;">
+                <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;text-align:center;border:none;'>46.9</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Conclusion and Future Work 
 
