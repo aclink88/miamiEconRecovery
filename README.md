@@ -291,7 +291,10 @@ well as various economic indicators. Seaborn pair plots and correlation
 matrices were used to visualize these relationships, as can be seen
 below:
 <ins>Seaborn Pair Plot:</ins>
-![](./images/image4.png)
+
+<p align="center">
+   <img src="./images/image4.png" style="display: block; margin: 0 auto;"/>
+</p>
 
 Figure 1: The plots above show the relationship between the variables as
 they increase or decrease. For instance, as the labor force increases,
@@ -300,7 +303,10 @@ variables influence the total number of business establishments. This
 gives us an idea on which variables drive the county's overall economy.
 
 <ins>Correlation Matrix:</ins>
-![](./images/image5.png)
+
+<p align="center">
+   <img src="./images/image5.png" style="display: block; margin: 0 auto;"/>
+</p>
 
 Figure 2: Figure showing a correlation between the variables of
 interest. The darker the cell the lower (or more negative) the
