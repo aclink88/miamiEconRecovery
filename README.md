@@ -191,7 +191,7 @@ Bureau of Labor Statistics, focusing on Miami-Dade County in Florida.
 Being able to explain 26.4 percent of the economic growth is a decent
 baseline to build our models around.
 
-[Fixed Effects]{.underline}
+<ins>Fixed Effects</ins>
 
 These are variables that are constant across the object of study. For
 example: individuals, communities, and in the Yelp study, businesses.
@@ -206,7 +206,7 @@ above, zip code and year were the fixed effects variables used
 
 I.  Data Sources:
 
-    A.  [American Community Survey-US Census Bureau:]{.underline}
+A.  <ins>American Community Survey-US Census Bureau:</ins>
 
 > Zip code level data providing 5-year annual estimates. The data
 > provided by the ACS contains social, economic, housing, and
@@ -246,7 +246,7 @@ I.  Data Sources:
 > the 12 subdivisions in which it was located to format it properly for
 > our hierarchical model.
 
-B.  [Bureau of Labor Statistics]{.underline}
+B.  <ins>Bureau of Labor Statistics</ins>
 
 > The Bureau of Labor Statistics (BLS) provided monthly employment
 > figures for Miami-Dade County. As this data is provided at a county
@@ -290,9 +290,8 @@ information, finance or professional business services industries, as
 well as various economic indicators. Seaborn pair plots and correlation
 matrices were used to visualize these relationships, as can be seen
 below:
-
-[Seaborn Pair
-Plot:]{.underline}![](./images/image4.png)
+<ins>Seaborn Pair Plot:</ins>
+![](./images/image4.png)
 
 Figure 1: The plots above show the relationship between the variables as
 they increase or decrease. For instance, as the labor force increases,
@@ -300,8 +299,7 @@ household income increases as well. We are also able to see which of the
 variables influence the total number of business establishments. This
 gives us an idea on which variables drive the county's overall economy.
 
-[Correlation Matrix:]{.underline}
-
+<ins>Correlation Matrix:</ins>
 ![](./images/image5.png)
 
 Figure 2: Figure showing a correlation between the variables of
@@ -338,7 +336,7 @@ combined with an ARIMA model, which was used to forecast monthly total
 nonfarm employment, to produce three month predictions of individual
 industry employment figures. These models are further explained below:
 
-#### [Bayesian Approach: Hierarchical Modeling of Subdivision Income]{.underline} 
+#### <ins>Bayesian Approach: Hierarchical Modeling of Subdivision Income</ins>
 
 A hierarchical regression model was built in order to explore and
 analyze the effect of industry employment distribution and educational
@@ -417,7 +415,7 @@ others? This model also allows us to see the importance of educational
 attainment per subdivision by seeing the effect percentage of residents
 holding at least a bachelor's degree has on median income.
 
-#### [PanelOLS: Modeling Annual Business Growth Rates]{.underline}
+#### <ins>PanelOLS: Modeling Annual Business Growth Rates</ins>
 
 In addressing our second research question, we looked at the work done
 by our predecessors at the University of Chicago to see any economic
@@ -504,7 +502,7 @@ Where the above is representative of:
 
 -   $e_{it}$ - the error term
 
-#### [Dirichlet Regression: Modeling Industry Employment]{.underline}
+#### <ins>Dirichlet Regression: Modeling Industry Employment</ins>
 
 In addressing our final research question, we took a look at the
 employment figures for the ten primary industries that make up total
@@ -557,7 +555,7 @@ found it to be a more appropriate use for our case.
 
 ## Results
 
-#### [Hierarchical Regression Model Findings:]{.underline}
+#### <ins>Hierarchical Regression Model Findings:</ins>
 
 ![](./images/image10.png)
 
@@ -608,7 +606,7 @@ educational attainment in already underserved areas would certainly mean
 more than it would in areas where more residents already have a
 bachelor's degree.
 
-#### [Business Growth Rate Model Findings:]{.underline}
+#### <ins>Business Growth Rate Model Findings:</ins>
 
   ----------------------------------- -----------------------------------
   **Model Results**                   
@@ -691,7 +689,7 @@ opportunities the further inland one moves, and some zip codes,
 specifically ones far from city centers in more rural areas have
 negative projected business growth rates.
 
-#### [Industry Employment Model Findings:]{.underline}
+#### <ins>Industry Employment Model Findings:</ins>
 
 After training our model on monthly industry employment figures from
 January of 2003 to October of 2020, we tested it on the most recent
@@ -847,7 +845,7 @@ http://r-statistics.co/Dirichlet-Regression-With-R.html.
 
 ## Appendix
 
-#### [Industry Employment Model:]{.underline} Individual Industry Graphs
+#### <ins>Industry Employment Model:</ins> Individual Industry Graphs
 
 ![](./images/image14.png)
 
