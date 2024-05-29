@@ -33,7 +33,7 @@ provide Miami leaders a deeper look into the future composition of their
 labor market, providing predictive models that could be implemented for
 scenario analysis.
 
-$R^2$ 
+$$R^2$$ 
 
 \({R}^2\\
 
