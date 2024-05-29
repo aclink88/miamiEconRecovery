@@ -702,7 +702,9 @@ industry proportions back to actual employment numbers by multiplying
 them by their respective total nonfarm monthly employment figures. These
 predictions against their actual values can be seen below:
 
-![](./images/image13.png)
+<p align="center">
+   <img src="./images/image13.png" style="display: block; margin: 0 auto;"/>
+</p>
 
 As can be seen in the above graph, our predicted employment numbers do a
 fairly decent job in approximating the actual monthly employment numbers
