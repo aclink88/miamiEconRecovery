@@ -704,7 +704,7 @@ them by their respective total nonfarm monthly employment figures. These
 predictions against their actual values can be seen below:
 
 <p align="center">
-   <img src="./images/image13.png" style="display: block; margin: 0 auto;"/>
+   <img src="./images/image13.png" align="center" style="display: block; margin: 0 auto;"/>
 </p>
 
 As can be seen in the above graph, our predicted employment numbers do a
@@ -729,8 +729,7 @@ predicted monthly total nonfarm estimates to get individual industry job
 estimates for the next three months, which can be seen in the table
 below[^1].
 
-<p align="center">
-<table style="width: 4.7e+2pt;border-collapse:collapse;border:none;" align="center">
+<table style="width: 4.7e+2pt;border-collapse:collapse;border:none;margin-left:auto;margin-right:auto;" align="center">
     <tbody>
         <tr>
             <td style="width: 165.75pt;border: 1pt solid black;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
@@ -902,7 +901,6 @@ below[^1].
         </tr>
     </tbody>
 </table>
-</p>
 
 ## Conclusion and Future Work 
 
