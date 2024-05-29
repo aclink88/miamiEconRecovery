@@ -137,7 +137,10 @@ c)  With supply chains being halted, there was a lack of access to
     Unfortunately, about 40 percent of respondents reported closing
     their business as a result of COVID-19. Loss of revenue was a
     contributing factor as well (MCC, 2020)".
-    ![](./images/image2.png)
+    
+<p align="center">
+   <img src="./images/image2.png" style="display: block; margin: 0 auto;"/>
+</p>
 
 II. Business Growth Forecasting
 
