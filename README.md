@@ -724,7 +724,7 @@ below[^1].
 
 <table style="width: 4.7e+2pt;border-collapse:collapse;border:none;">
     <tbody>
-        <tr>
+        <tr style="background-color:#0070C0;color:#ffffff;">
             <td style="width: 165.75pt;border: 1pt solid black;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
                 <p style='margin:0in;margin-bottom:.0001pt;line-height:normal;font-size:15px;font-family:"Arial",sans-serif;border:none;'><strong><span style="color:white;">Industry</span></strong></p>
             </td>
