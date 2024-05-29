@@ -1,8 +1,8 @@
-Miami's Post Economy Recovery
+# Miami's Post Economy Recovery
 
 Alex Link
 
-# Abstract
+## Abstract
 
 The United States has witnessed the highest number of cases and deaths
 during the COVID-19 pandemic. Florida State has seen over 2.75million
@@ -33,9 +33,7 @@ provide Miami leaders a deeper look into the future composition of their
 labor market, providing predictive models that could be implemented for
 scenario analysis.
 
-# 
-
-# Introduction
+## Introduction
 
 The COVID-19 pandemic sent shockwaves across the world causing economic
 shutdowns and country lockdowns. The infectious disease caused by the
@@ -79,7 +77,7 @@ tackled to help build these models:
     affected by the COVID-19 pandemic and what is its outlook moving
     forward?
 
-# Literature Review/Background
+## Literature Review/Background
 
 I.  Miami, Florida Economic Effect
 
@@ -202,9 +200,9 @@ sex) or change at a constant rate over time (age). In the study explored
 above, zip code and year were the fixed effects variables used
 (​​Statisticshowto, 2021).
 
-# Methods
+## Methods
 
-## Data Description
+### Data Description
 
 I.  Data Sources:
 
@@ -281,7 +279,7 @@ company\'s (US Ignite) real time visual dashboard.
 
 ![](./images/image3.png)
 
-## Exploratory Data Analysis (EDA): 
+### Exploratory Data Analysis (EDA): 
 
 EDA was conducted to explore relationships between the variables of
 interest in our data. We wanted to see the relationships between the
@@ -321,7 +319,7 @@ establishments in an area, which allows us to narrow down our analysis
 to a subset of predictors from our original 83 to further experiment
 with in our models.
 
-## Methodology:
+### Methodology:
 
 We explored a variety of different techniques in answering our research
 questions. First, we built a Bayesian hierarchical regression model to
@@ -340,7 +338,7 @@ combined with an ARIMA model, which was used to forecast monthly total
 nonfarm employment, to produce three month predictions of individual
 industry employment figures. These models are further explained below:
 
-### [Bayesian Approach: Hierarchical Modeling of Subdivision Income]{.underline} 
+#### [Bayesian Approach: Hierarchical Modeling of Subdivision Income]{.underline} 
 
 A hierarchical regression model was built in order to explore and
 analyze the effect of industry employment distribution and educational
@@ -419,7 +417,7 @@ others? This model also allows us to see the importance of educational
 attainment per subdivision by seeing the effect percentage of residents
 holding at least a bachelor's degree has on median income.
 
-### [PanelOLS: Modeling Annual Business Growth Rates]{.underline}
+#### [PanelOLS: Modeling Annual Business Growth Rates]{.underline}
 
 In addressing our second research question, we looked at the work done
 by our predecessors at the University of Chicago to see any economic
@@ -506,7 +504,7 @@ Where the above is representative of:
 
 -   $e_{it}$ - the error term
 
-### [Dirichlet Regression: Modeling Industry Employment]{.underline}
+#### [Dirichlet Regression: Modeling Industry Employment]{.underline}
 
 In addressing our final research question, we took a look at the
 employment figures for the ten primary industries that make up total
@@ -557,9 +555,9 @@ percent of total nonfarm employment that each industry accounts for.
 Unlike mean absolute error (MAE), RMSE penalizes larger errors, so we
 found it to be a more appropriate use for our case.
 
-# Results
+## Results
 
-### [Hierarchical Regression Model Findings:]{.underline}
+#### [Hierarchical Regression Model Findings:]{.underline}
 
 ![](./images/image10.png)
 
@@ -610,7 +608,7 @@ educational attainment in already underserved areas would certainly mean
 more than it would in areas where more residents already have a
 bachelor's degree.
 
-### [Business Growth Rate Model Findings:]{.underline}
+#### [Business Growth Rate Model Findings:]{.underline}
 
   ----------------------------------- -----------------------------------
   **Model Results**                   
@@ -693,7 +691,7 @@ opportunities the further inland one moves, and some zip codes,
 specifically ones far from city centers in more rural areas have
 negative projected business growth rates.
 
-### [Industry Employment Model Findings:]{.underline}
+#### [Industry Employment Model Findings:]{.underline}
 
 After training our model on monthly industry employment figures from
 January of 2003 to October of 2020, we tested it on the most recent
@@ -765,7 +763,7 @@ below[^1].
   Other                    47.8            47.2            46.9
   ------------------------ --------------- --------------- ---------------
 
-# Conclusion and Future Work 
+## Conclusion and Future Work 
 
 To address our research questions, a bayesian hierarchical model,
 PanelOLS regression, and a Dirichlet regression were implemented. Our
@@ -814,7 +812,7 @@ Miami-Dade county and be able to narrow down actions government
 officials need to take to curate a solution and meet the needs of the
 citizens.
 
-# References
+## References
 
 Brugger, Bernhard. "A Guide to Panel Data Regression: Theoretics and
 Implementation with Python." Medium, Towards Data Science, 14 Feb. 2021,
@@ -847,9 +845,9 @@ https://unitedwaymiami.org/wp-content/uploads/2021/10/COVID-Impact-Survey_Miami-
 Prabhakaran, Selva. "Dirichlet-Regression-With-R." Dirichlet Regression,
 http://r-statistics.co/Dirichlet-Regression-With-R.html.
 
-# Appendix
+## Appendix
 
-### [Industry Employment Model:]{.underline} Individual Industry Graphs
+#### [Industry Employment Model:]{.underline} Individual Industry Graphs
 
 ![](./images/image14.png)
 
