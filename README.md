@@ -104,7 +104,7 @@ a)  29% of businesses benefit from an online platform. Around 53% of
     especially when no revenue is earned, or businesses are shut. Being
     able to run a business through an online channel or platform
     appeared to be beneficial as it enabled businesses to continue
-    running their businesses and earn revenue.
+    running their businesses and earn revenue.<br>
 
 b)  Since the outbreak of the pandemic, various events and activities
     were restricted across the State. Majority of the businesses that
@@ -116,7 +116,7 @@ b)  Since the outbreak of the pandemic, various events and activities
     Transportation & Warehousing, Educational Services, Real Estate,
     Rental & Leasing, and Accommodation & Food Services. The
     transportation industry suffered significantly even after businesses
-    opened up due to travel restrictions.
+    opened up due to travel restrictions.<br>
 
 c)  With supply chains being halted, there was a lack of access to
     supplies and thus businesses were forced to change their business
