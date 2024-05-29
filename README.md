@@ -136,12 +136,9 @@ c)  With supply chains being halted, there was a lack of access to
     another 20 percent enhanced an existing second mode of delivery.
     Unfortunately, about 40 percent of respondents reported closing
     their business as a result of COVID-19. Loss of revenue was a
-    contributing factor as well
-    ![](./images/image2.png) (MCC, 2020)".
+    contributing factor as well (MCC, 2020)".
+    ![](./images/image2.png)
 
-```{=html}
-<!-- -->
-```
 II. Business Growth Forecasting
 
 A research paper by the Harvard Business School explored how Yelp data
