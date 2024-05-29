@@ -722,7 +722,7 @@ predicted monthly total nonfarm estimates to get individual industry job
 estimates for the next three months, which can be seen in the table
 below[^1].
 
-<table style="width: 4.7e+2pt;border-collapse:collapse;border:none;">
+<table style="width: 4.7e+2pt;border-collapse:collapse;border:none;" align="center">
     <tbody>
         <tr>
             <td style="width: 165.75pt;border: 1pt solid black;background: rgb(17, 85, 204);padding: 5pt;vertical-align: top;">
