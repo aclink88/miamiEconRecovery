@@ -97,11 +97,35 @@ Florida Chamber Foundation and the University of West Florida Haas
 Center. The survey was distributed to 100,000 small businesses with the
 following findings reported:
 
+<table>
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
+      a) 29% of businesses benefit from an online platform. Around 53% of businesses leased facilities to run their businesses, with 33% owning them. Renting/leasing facilities is a cost to the business especially when no revenue is earned, or businesses are shut. Being able to run a business through an online channel or platform appeared to be beneficial as it enabled businesses to continue running their businesses and earn revenue.
+    </td>
+    <td style="width: 20%; vertical-align: top; text-align: right;">
+      <img src="./images/image1.png" alt="Descriptive Alt Text" style="height: 50px;">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td style="width: 80%; vertical-align: top;">
+      b) Since the outbreak of the pandemic, various events and activities were restricted across the State. Majority of the businesses that were forced to close during the crisis with those that relied on in person operations experienced longer periods of closure. Those that transitioned into remote operations experienced less. Revenues dropped from 2019 to 2020. The top five most impacted industries as shown in the figure included: Arts, Entertainment and Recreation, Transportation & Warehousing, Educational Services, Real Estate, Rental & Leasing, and Accommodation & Food Services. The transportation industry suffered significantly even after businesses opened up due to travel restrictions.
+    </td>
+    <td style="width: 20%; vertical-align: top; text-align: right;">
+      <!-- No image for this paragraph, but keeping the structure for consistency -->
+    </td>
+  </tr>
+</table>
+
+## STOP
+
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <p style="flex: 1;">
     a) 29% of businesses benefit from an online platform. Around 53% of businesses leased facilities to run their businesses, with 33% owning them. Renting/leasing facilities is a cost to the business especially when no revenue is earned, or businesses are shut. Being able to run a business through an online channel or platform appeared to be beneficial as it enabled businesses to continue running their businesses and earn revenue.
   </p>
-  <img src="./images/image2.png" alt="Descriptive Alt Text" style="height: 50px; margin-left: 20px;">
+  <img src="./images/image1.png" alt="Descriptive Alt Text" style="height: 50px; margin-left: 20px;">
 </div>
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
