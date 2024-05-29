@@ -460,9 +460,7 @@ grow over time. These underlying growth trends are highly correlated,
 leading to autocorrelation within the model, resulting in a high *R*^2^
 without any truly significant economic meaning.
 
-![](./images/image7.png)
-![](./images/image8.png)
-![](./images/image9.png)
+<img src="./images/image7.png" width="333" height="auto"> <img src="./images/image8.png" width="333" height="auto"> <img src="./images/image9.png" width="333" height="auto">
 
 Looking at the above graphs made it evident to us that spurious
 regression would be an issue for us if we attempted to model the raw
@@ -481,8 +479,9 @@ explanatory power, as represented by their coefficient of determination
 (*R*^2^). Our best model, subject to the aforementioned criteria, had
 the following structure:
 
-$${estab}_{it} = \beta_{0} + \beta_{1}{estab}_{i,\ t - 1} + \beta_{2}{labforce}_{i,\ t - 1} + \beta_{3}{portion₋not₋infofinprof}_{i,\ t - 1} + \gamma U_{i} + \delta F_{t} + e_{it}$$
-
+```math
+{estab}_{it} = \beta_{0} + \beta_{1}{estab}_{i,\ t - 1} + \beta_{2}{labforce}_{i,\ t - 1} + \beta_{3}{portion₋not₋infofinprof}_{i,\ t - 1} + \gamma U_{i} + \delta F_{t} + e_{it}
+```
 Where the above is representative of:
 
 -   ${estab}_{it}$ - the current year's business establishment growth
@@ -615,24 +614,9 @@ bachelor's degree.
 #### <ins>Business Growth Rate Model Findings:</ins>
 
   ----------------------------------- -----------------------------------
-  **Model Results**                   
-
-  *R*^2^                              25.85%
-
-  **Parameter**                       **Estimate**
-
-  Intercept                           0.0258
-
-  Establishment Growth Rate (1 Year   -0.2215
-  Lag)                                
-
-  Labor Force Growth Rate (1 Year     0.1281
-  Lag)                                
-
-  Portion of Workforce not Employed   0.2093
-  in Information, Finance or          
-  Professional Business Services      
-  Industries Growth Rate (1 Year Lag) 
+<p align="center">
+   <img src="./images/image15.png" style="display: block; margin: 0 auto;"/>
+</p>
   ----------------------------------- -----------------------------------
 
 As seen in our literature review, forecasting business growth is no easy
