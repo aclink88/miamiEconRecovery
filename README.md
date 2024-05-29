@@ -675,7 +675,9 @@ of our model for the end user, our results were overlaid on an
 interactive map using the folium library, so users can see the
 geographic effects of our model.
 
-![](./images/image12.png)
+<p align="center">
+   <img src="./images/image12.png" align="center" style="display: block; margin: 0 auto;"/>
+</p>
 
 As can be seen in the above chart, our model indicates that potential
 business growth is more abundant in zip codes closer to the coast and
