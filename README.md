@@ -97,7 +97,7 @@ Florida Chamber Foundation and the University of West Florida Haas
 Center. The survey was distributed to 100,000 small businesses with the
 following findings reported:
 
-<img src="./images/image1.png" align="right" width="300px"/>
+<img src="./images/image1.png" align="right" width="400px"/>
 <p>
 a)  29% of businesses benefit from an online platform. Around 53% of
     businesses leased facilities to run their businesses, with 33%
@@ -465,7 +465,9 @@ grow over time. These underlying growth trends are highly correlated,
 leading to autocorrelation within the model, resulting in a high $R^2$
 without any truly significant economic meaning.
 
+<p align="center">
 <img src="./images/image7.png" width="400" height="auto"> <img src="./images/image8.png" width="400" height="auto"> <img src="./images/image9.png" width="400" height="auto">
+</p>
 
 Looking at the above graphs made it evident to us that spurious
 regression would be an issue for us if we attempted to model the raw
