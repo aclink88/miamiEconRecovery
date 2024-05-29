@@ -294,6 +294,7 @@ information, finance or professional business services industries, as
 well as various economic indicators. Seaborn pair plots and correlation
 matrices were used to visualize these relationships, as can be seen
 below:
+
 <ins>Seaborn Pair Plot:</ins>
 
 <p align="center">
